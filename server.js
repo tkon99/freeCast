@@ -3,12 +3,21 @@ var app = express();
 var http = require("http").Server(app);
 var open = require('open');
 var colors = require('colors');
+require('shelljs/global');
 
 var io = require('socket.io')(http);
 
 var pairingcodes = [];
 
+function getWlan(){
+	var version = exec('NETSH WLAN SHOW INTERFACE | findstr /r "^....SSID"', {silent:true}).output;
+	var ssid = version.split(":");
+	ssid = ssid[1].trim();
+	return ssid;
+}
+
 io.on('connection', function(socket){
+  socket.emit('wlan', getWlan());
   socket.on('type', function(data){
   	console.log(colors.green(socket.id) + ' connected as a ' + colors.red(data));
   });

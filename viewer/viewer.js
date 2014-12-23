@@ -21,8 +21,10 @@ $(document).ready(function(){
 	socket.emit("type", "receiver");
 
 	socket.emit("pairingcode", pairingcode);
-	
-	socket.on("*", console.log(data));
+
+	socket.on("wlan", function(ssidName){
+		$("#ssidName").html(ssidName);
+	});
 });
 
 $(window).bind('fullscreen-off', function(e){
