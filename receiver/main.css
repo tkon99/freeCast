@@ -22,6 +22,9 @@ body{
     z-index: -999;
 
     cursor: none;
+
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
 }
 
 #network{
