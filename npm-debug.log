@@ -1,0 +1,64 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'shelljs/global' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json freeCast@0.0.1 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'shelljs/global', null ]
+8 verbose cache add name=undefined spec="shelljs/global" args=["shelljs/global",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'shelljs/global',
+9 verbose parsed url   path: 'shelljs/global',
+9 verbose parsed url   href: 'shelljs/global' }
+10 silly lockFile 521910ff-shelljs-global shelljs/global
+11 verbose lock shelljs/global C:\Users\Thomas\AppData\Roaming\npm-cache\521910ff-shelljs-global.lock
+12 info maybeGithub Attempting shelljs/global from git://github.com/shelljs/global
+13 silly lockFile 6b563e6e-git-github-com-shelljs-global git://github.com/shelljs/global
+14 verbose lock git://github.com/shelljs/global C:\Users\Thomas\AppData\Roaming\npm-cache\6b563e6e-git-github-com-shelljs-global.lock
+15 verbose addRemoteGit [ 'git://github.com/shelljs/global', 'master' ]
+16 verbose git clone git://github.com/shelljs/global Cloning into bare repository 'C:\Users\Thomas\AppData\Roaming\npm-cache\_git-remotes\git-github-com-shelljs-global-6b563e6e'...
+16 verbose git clone git://github.com/shelljs/global fatal: remote error:
+16 verbose git clone git://github.com/shelljs/global   Repository not found.
+17 silly lockFile 6b563e6e-git-github-com-shelljs-global git://github.com/shelljs/global
+18 silly lockFile 6b563e6e-git-github-com-shelljs-global git://github.com/shelljs/global
+19 info maybeGithub Attempting shelljs/global from git+ssh://git@github.com:shelljs/global
+20 silly lockFile 8dc9a873-git-github-com-shelljs-global git@github.com:shelljs/global
+21 verbose lock git@github.com:shelljs/global C:\Users\Thomas\AppData\Roaming\npm-cache\8dc9a873-git-github-com-shelljs-global.lock
+22 verbose addRemoteGit [ 'git@github.com:shelljs/global', 'master' ]
+23 error git clone git@github.com:shelljs/global Cloning into bare repository 'C:\Users\Thomas\AppData\Roaming\npm-cache\_git-remotes\git-github-com-shelljs-global-8dc9a873'...
+23 error git clone git@github.com:shelljs/global Warning: Permanently added 'github.com,192.30.252.128' (RSA) to the list of known hosts.
+23 error git clone git@github.com:shelljs/global Permission denied (publickey).
+23 error git clone git@github.com:shelljs/global fatal: Could not read from remote repository.
+23 error git clone git@github.com:shelljs/global
+23 error git clone git@github.com:shelljs/global Please make sure you have the correct access rights
+23 error git clone git@github.com:shelljs/global and the repository exists.
+24 silly lockFile 8dc9a873-git-github-com-shelljs-global git@github.com:shelljs/global
+25 silly lockFile 8dc9a873-git-github-com-shelljs-global git@github.com:shelljs/global
+26 silly lockFile 521910ff-shelljs-global shelljs/global
+27 silly lockFile 521910ff-shelljs-global shelljs/global
+28 error addLocal Could not install shelljs/global
+29 error Error: ENOENT, stat 'C:\Users\Thomas\Desktop\node projects\freeCast\shelljs\global'
+30 error If you need help, you may report this *entire* log,
+30 error including the npm and node versions, at:
+30 error     <http://github.com/npm/npm/issues>
+31 error System Windows_NT 6.1.7601
+32 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "shelljs/global"
+33 error cwd C:\Users\Thomas\Desktop\node projects\freeCast
+34 error node -v v0.10.32
+35 error npm -v 1.4.28
+36 error path C:\Users\Thomas\Desktop\node projects\freeCast\shelljs\global
+37 error code ENOENT
+38 error errno 34
+39 verbose exit [ 34, true ]

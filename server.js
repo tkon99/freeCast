@@ -62,9 +62,7 @@ function removePairingCode(id){
 	return true;
 }
 
-app.use('/receiver', express.static(__dirname + '/viewer'));
-
-app.use('/sender', express.static(__dirname + '/sender'));
+app.use('/receiver', express.static(__dirname + '/receiver'));
 
 http.listen(3000, function(){
 	open("http://localhost:3000/receiver");
