@@ -1,8 +1,39 @@
+/*
+FANCY ASCII MADNESS :D
+*/
+
+var colors = require('colors');
+
+console.log("                                                              ");
+console.log("                      NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN7    ");
+console.log("                      NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNDN7    ");
+console.log("                      DD                               DN7    ");
+console.log("                      DD                      W        DN7    ");
+console.log("                      DD                     [ ]       DN7    ");
+console.log("                      ND                      3        DN7    ");
+console.log("                      NN:                    /|        DN7    ");
+console.log("                                         \\|// /        DN7    ");
+console.log("                    DNNN$               -( )-|         DN7    ");
+console.log("                    .?MDNNN:             J V |         DN7    ");
+console.log("                    +   .NNDM      ___  '    /         DN7    ");
+console.log("                    DNDN   MDN.    \\  \\/    |          DN7    ");
+console.log("                      MNNN  MDN                        DD7    ");
+console.log("                    D  .NDM..DD$ ~NNNNNNNNNNNNNNNNNNNDDDN7    ");
+console.log("                    DDM:.NDN IND. ..................          ");
+console.log("                    ZZZ$ $ZZ  OZ.                             ");
+console.log("                                   (c) tkon99                 ");
+
+console.log(" ");
+console.log(colors.green("Starting freeCast server..."));
+
+/*
+SERIOUS STUFF
+*/
+
 var express = require("express");
 var app = express();
 var http = require("http").Server(app);
 var open = require('open');
-var colors = require('colors');
 require('shelljs/global');
 
 var io = require('socket.io')(http);
@@ -68,4 +99,9 @@ http.listen(3000, function(){
 	open("http://localhost:3000/receiver");
 });
 
-console.log("Starting freeCast server");
+process.stdout.write('\033c');
+
+console.log(colors.green("freeCast by tkon99"));
+console.log(" ");
+console.log("Opened a receiver for you!");
+console.log(" ");
